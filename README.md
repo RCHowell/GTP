@@ -17,7 +17,7 @@ sent as plaintext to the engine's stdin or some network interface. I did not wan
 plaintext in my 
 program, so I chose to use protobuf for GTP and Go/Baduk structures and wrap Go engines with a gRPC service.
 
-My project's Go (Baduk) centrail server operates with the generated Go (lang) code and communicates with the 
+My project's Go (Baduk) central server operates with the generated Go (lang) code and communicates with the 
 AIs/Engines e.g.
 GnuGo and KataGo with the generated gRPC stub because the engines are wrapped by the generated server. This allows 
 for communicating between the central server and various Go (Baduk) AIs/Engines using structured input and output as
